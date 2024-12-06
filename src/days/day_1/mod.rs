@@ -31,11 +31,13 @@ pub fn run() {
 fn part_1(mut inter: Vec<u32>, mut inter2: Vec<u32>) -> u32 {
     inter.sort();
     inter2.sort();
-    inter.iter().zip(inter2.iter()).fold(0, |acc, (x, y)| acc + x.abs_diff(*y))    
+    inter
+        .iter()
+        .zip(inter2.iter())
+        .fold(0, |acc, (x, y)| acc + x.abs_diff(*y))
 }
 
 fn part_2(left: Vec<u32>, right: Vec<u32>) -> u32 {
-
     let right_map = right.into_iter().fold(HashMap::new(), |mut acc, i| {
         *acc.entry(i).or_insert(0) += 1;
         acc
