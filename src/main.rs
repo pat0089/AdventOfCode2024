@@ -7,5 +7,6 @@ fn main() {
     //days::day_4::run();
     //days::day_5::run();
     //days::day_6::run();
-    days::day_7::run();
+    //days::day_7::run();
+    days::day_8::run();
 }
