@@ -3,7 +3,7 @@ use std::{
     fs::read_to_string,
 };
 
-const DIRECTIONS: [(i32, i32); 4] = [(-1, 0), (0, 1), (1, 0), (0, -1)];
+use crate::util::DIRECTIONS;
 
 pub fn run() {
     println!("Day 6");
